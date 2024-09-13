@@ -13,11 +13,10 @@ Download coderunner extension and press runcode in dropdown beside run symbol in
 
 # Boiler plate
 This should be written before starting to code c++ :-
-------------------------
+
 #include <iostream>
 using namespace std;
 
 int main(){
     return 0;
 }
--------------------------
