@@ -1,3 +1,12 @@
+// Boiler plate : This should be written before starting to code c++ :-
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
 
