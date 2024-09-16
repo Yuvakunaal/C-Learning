@@ -17,7 +17,7 @@ int binary(int num)
     int rem;
     int res = 0;
     int pow = 1;
-    while (num != 0)
+    while (num > 0)
     {
         rem = num % 2;
         res += (rem * pow);

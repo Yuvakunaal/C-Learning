@@ -1,0 +1,12 @@
+|--------------------------------------------|
+|  Operators      |      Precedence          |
+|--------------------------------------------|
+|  !, +, -        |  first (rigth to left)   |
+|  *, /, %        |  second (left to right)  |
+|  +, -           |  third (left to right)   |
+|  <, <=, >=, >   |  fourth (left to right)  |
+|  ==, !=         |  fifth (left to right)   |
+|  &&             |  sixth (left to right)   |
+|  ||             |  seventh (left to right) |
+|  = (assignment) |  eigth (right to left)   |
+|--------------------------------------------|

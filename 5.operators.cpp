@@ -51,10 +51,17 @@ int main()
     cout << i << "\n";
     cout << j << "\n";
 
-    int num1=10;
+    int num1 = 10;
     num1 = num1 + 20;
     cout << num1 << "\n";
 
-    
-    return 0;
+    // bitwise operators
+    cout << (a & b) << "\n"; // & = bitwise and
+    cout << (a | b) << "\n"; // | = bitwise or
+    cout << (a ^ b) << "\n"; // ^ = bitwise xor
+
+    cout << (4 << 1) << "\n"; // << = left shift
+    cout << (4 >> 1) << "\n"; // >> = right shift
+
+        return 0;
 }
