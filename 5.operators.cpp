@@ -62,6 +62,5 @@ int main()
 
     cout << (4 << 1) << "\n"; // << = left shift
     cout << (4 >> 1) << "\n"; // >> = right shift
-
-        return 0;
+    return 0;
 }

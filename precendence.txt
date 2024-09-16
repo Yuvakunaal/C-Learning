@@ -1,7 +1,7 @@
 |--------------------------------------------|
 |  Operators      |      Precedence          |
 |--------------------------------------------|
-|  !, +, -        |  first (rigth to left)   |
+|  !, +,- (unary) |  first (rigth to left)   |
 |  *, /, %        |  second (left to right)  |
 |  +, -           |  third (left to right)   |
 |  <, <=, >=, >   |  fourth (left to right)  |
