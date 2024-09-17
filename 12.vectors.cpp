@@ -36,6 +36,9 @@ int main()
     nums.pop_back();                                   // deletes at index specified (default = end of vector)
     cout << "Size of nums = " << nums.size() << "\n";
 
-    
+    nums.push_back(35);
+    nums.push_back(45);
+    cout << nums.capacity() << "\n"; // by keeping on adding elements in vector, its capacity will be doubled.
+
     return 0;
 }
