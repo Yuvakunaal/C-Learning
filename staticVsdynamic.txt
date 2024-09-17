@@ -1,0 +1,9 @@
+static : 
+1) compile time
+2) fixed
+3) uses stack to store
+
+dynamic :
+1) run time
+2) not fixed (can be resized)
+3) uses heap to store
