@@ -166,5 +166,14 @@ int main()
         }
     }
     cout << upper << "\n";
+
+    // or (using inbuilt function)
+    string str_low = "abcde";
+    transform(str_low.begin(),str_low.end(),str_low.begin(),::toupper);
+    // transform(a,b,c,d), a=start pointer, b=end pointer, c=from where to start doing transforming, 
+    // d = ::<what to transform>
+    cout << str_low << "\n";
+    transform(str_low.begin(),str_low.end(),str_low.begin(),::tolower);
+    cout << str_low << "\n";
     return 0;
 }
