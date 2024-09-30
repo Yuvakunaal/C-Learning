@@ -1,6 +1,6 @@
 // leetcode - 53 : https://leetcode.com/problems/maximum-subarray/
 // Description : Given an integer array nums, find the subarray with the largest sum, and return its sum.
-// Make this optimize : Kadane's algorithm
+// Make this optimize : Using Kadane's algorithm
 // Learn from : https://youtu.be/9IZYqostl2M?si=4EiiIMoIzkb1Toc5&t=760
 #include <iostream>
 using namespace std;
@@ -17,7 +17,7 @@ int maxSubarraySum(vector<int> nums)
         }
     }
     return maxSum;
-    
+
     // or
 
     // int currSum = 0;
