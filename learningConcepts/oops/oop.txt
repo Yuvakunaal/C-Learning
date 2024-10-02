@@ -1,0 +1,89 @@
+objects : These are entities in the real world.
+class : It is like a blueprint of these entities.
+
+Access modifiers :-
+private : data & methods accessible inside class.
+public : data & methods accesssible every where.
+protected : data & methods accessible inside class and to its derived class.
+
+Encapsulation :-
+It is wrapping up of data & member functions in a single unit called class.
+data hiding : The important information which is hidden (i.e.., private)
+example :-
+class Account{
+private:
+    string password;
+    double balance;   // data hiding
+public:
+    int accountId;
+    string username;
+}
+
+Constructor :-
+Special methods invoked automatically at time of object creation. Used for installation.
+-> same name as class.
+-> constructor doesn't have return type.
+-> only called once (automatically), at object creation.
+-> memory allocation happens when constructor is called.
+
+Constructor Overloading :-
+Having two or more constructor with diff type of parameters.
+
+Method Overloading :-
+Having two or more methods with diff type of parameters.
+
+Function Overriding :-
+Parent & child both contains the same function with different implementation, The parent class function is said to be overridden.
+
+Virtual functions :-
+A virtual function is a member function that you expect to be redefined in derived classes. 
+
+Shallow & Deep copy :-
+A shallow copy of an object copies all of the member values from one object to another.
+A deep copy, on other hand, not only copies the member values but also makes copies of ny dynamically allocated memory that the members point to.
+
+Destructor :-
+Opposite of contructor which de-allocates the data
+-> if we do not keep any destructor, compiler automatically creates and destructor, it means the objects will be removes from memory after main() function execution is done...(but it deletes only static allocated).
+-> for dynamic allocation (i.e.., pointers),  we need to delete it dynamically only.
+Why removing dynamically allocation :-
+(1) memory leak may happen
+(2) memory waste (unnecessarily storing data in memory)
+
+Inheritance :-
+When properties & member functions of base class are passed on to the derived class.
+example :- 
+(1) parent -> child
+(2) vehicle
+       |---> car
+       |---> bike
+       |---> truck
+       |---> etc
+Used for :-
+(1) code re-usability
+
+Types of Inheritance :- (view in types_of_inheritance.png)
+(1) Single Level Inheritance
+(2) Multi Level Inheritance
+(3) Multiple Inheritance
+(4) Heirarchical Inheritance
+(5) Hybrid Inheritance
+
+Polymorphism :-
+Polymorphism is the ability of objects to take on different forms or behave in different ways depending on the context in which they are used.
+(1) Compile time Polymorphism : (i) Contructor Overloading (ii) Method Overloading
+(2) Run time Polymorphism : (i) Function Overriding (ii) Virtual functions
+-- about these -> in line numbers (29 to 39) --
+
+Abstraction :-
+Hiding all unnecessary details and showing only the necessary parts.
+using Abstract classes...
+(1) Abstract classes are used to provide a base class from which other classes can be derived.
+(2) They cannot be instantiated(object creation) and are meant to be inherited.
+(3) Abstract classes are typically used to define an interface for derived classes.
+
+Static Keyword :-
+-> Static Variables :-
+   Variables declared as static in a function are created & initialised once for the lifetime of the program.(in function)
+   Static variables in a class are created & initialised once. They are shared by all the object of the class.(in class)
+-> Static Objects :-
