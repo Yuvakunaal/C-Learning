@@ -1,24 +1,22 @@
 #include <iostream>
 using namespace std;
 
-int binarySearch(int arr[], int length, int target)
+int binarySearch(int arr[], int target, int start, int end)
 {
-    int start = 0;
-    int end = length - 1;
-    while (start <= end)
+    if (start <= end)
     {
-        int mid = start + (end - start) / 2;    // for even bigger sized arrays it is used as optimised formula.
+        int mid = start + (end - start) / 2;
         if (arr[mid] == target)
         {
             return mid;
         }
-        else if (arr[mid] > target)
+        else if (arr[mid] < target)
         {
-            end = mid - 1;
+            return binarySearch(arr, target, mid + 1, end);
         }
         else
         {
-            start = mid + 1;
+            return binarySearch(arr, target, start, mid - 1);
         }
     }
     return -1;
@@ -30,7 +28,7 @@ int main()
     cout << "Enter size = ";
     cin >> length;
 
-    cout << "Enter elements :-" << "\n";
+    cout << "Enter elements (with space seperation) :-" << "\n";
     int arr[length];
     for (int i = 0; i < length; i++)
     {
@@ -40,6 +38,6 @@ int main()
     cout << "Enter target = ";
     cin >> target;
 
-    cout << binarySearch(arr, length, target) << "\n";
+    cout << binarySearch(arr, target, 0, length - 1) << "\n";
     return 0;
 }

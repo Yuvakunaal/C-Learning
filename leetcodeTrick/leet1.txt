@@ -5,3 +5,12 @@ int speedUp = [] {
     std::cin.tie(0);
     return 0;
 }();
+
+or
+
+auto init =[]() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    return 0;
+}();
