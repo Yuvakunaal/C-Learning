@@ -69,7 +69,8 @@ int main()
     int arr[] = {60, 50, 40, 30, 20, 10, 80, 70, 100, 90};
     mergeSort(arr, 0, n - 1);
 
-    for(int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         cout << arr[i] << " ";
     }
     cout << "\n";

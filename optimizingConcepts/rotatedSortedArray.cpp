@@ -38,6 +38,8 @@ int search(vector<int> nums, int target){
 
 int main()
 {
-
+    vector<int> vec = {4,5,6,7,8,0,1,2,3};
+    int ans = search(vec, 6);
+    cout << "Index = " << ans << "\n";
     return 0;
 }
