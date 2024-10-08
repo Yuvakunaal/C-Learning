@@ -37,7 +37,8 @@ int main()
     int s = 9;
     int arr[] = {1, 3, 2, 3, 4, 1, 6, 4, 3};
     countSort(arr, s);
-    for(int i = 0; i < s; i++){
+    for (int i = 0; i < s; i++)
+    {
         cout << arr[i] << " ";
     }
     cout << "\n";
